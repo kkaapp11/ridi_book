@@ -3,6 +3,7 @@
 *{ margin: 0; padding: 0;}
 li{ list-style: none;}
 a{ text-decoration: none; display: block; color: #333; font-family:'Noto Sans KR', sans-serif;}
+.notosanskr * { font-family: 'Noto Sans KR', sans-serif;}
 img{ width:100%;}
 .wrap{ width: 100%; overflow: hidden;}
 header, section, footer {
@@ -993,6 +994,13 @@ footer .footer_in .family .fa_con > a {
     width: 100%;
     float: left;
     position: relative;
+    z-index: 1;
+}
+.site .site_menu nav > ul > li.active {
+    z-index: 2;
+}
+.site .site_menu nav > ul > li.active > a{
+    color: #fff;
 }
 .site .site_menu nav > ul > li > a {
     float: left;
@@ -1002,9 +1010,7 @@ footer .footer_in .family .fa_con > a {
     text-shadow: 0 0 2px #111;
     font-weight: bold;
 }
-.site .site_menu nav > ul > li > a.active{
-    color: #fff;
-}
+
 /* .site안의 왼쪽영역 메뉴의 라인 */
 .site .site_menu nav > ul > li > p {
     float: left;
@@ -1123,4 +1129,7 @@ footer .footer_in .family .fa_con > a {
     font-weight: bold;
     color: white;
     text-shadow: 0 0 1px #111;
+}
+.subColor {
+    color: #1e9eff;
 }
